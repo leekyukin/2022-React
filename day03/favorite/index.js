@@ -7,15 +7,6 @@ const deleteBtn = document.getElementById("delete-btn");
 const leadsFromLocalStroage = JSON.parse(localStorage.getItem("myLeads"));
 const tabBtn = document.getElementById("tab-btn");
 
-inputEl.addEventListener("keypress", function(event) {
-    if (event.key === "Enter") {
-        myLeads.push(inputEl.value);
-        inputEl.value = "";
-        console.log(myLeads);
-        localStorage.setItem("myLeads", JSON.stringify(myLeads));
-       rander();
-    }
-})
 
 tabBtn.addEventListener("click", function() {
     chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
@@ -58,3 +49,13 @@ deleteBtn.addEventListener("click",function () {
     myLeads = [];
     rander();
 });
+
+inputEl.addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+        myLeads.push(inputEl.value);
+        inputEl.value = "";
+        console.log(myLeads);
+        localStorage.setItem("myLeads", JSON.stringify(myLeads));
+       rander();
+    }
+})
