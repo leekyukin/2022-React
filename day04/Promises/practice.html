@@ -1,0 +1,22 @@
+<script>
+
+const userData  = prompt("user data");
+
+const check = () => {
+    return new Promise( (resolve, reject) => {
+        setTimeout( () => {
+            if (userData) {
+                resolve("GOODGGOD");
+            }
+            else {
+                reject("fuck you man");
+            }
+        }, 3000);
+    })
+}
+
+check()
+.then( (success) => console.log(success))
+.catch( (error) => console.log(error));
+
+</script>

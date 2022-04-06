@@ -1,0 +1,25 @@
+<script>
+    // function declaration
+    function breakfastMenu() {
+        return "I'm going to scrambled eggs for breakfast.";
+    }
+
+    // anonymous function
+    const lunchMenu = function() {
+        return "I'm going to scrambled eggs for breakfast.";
+    }
+
+    // arrow function
+    const dinnerMenu = (food) => {
+        return `I'm going to eat a ${food} for dinner.`;
+    }
+
+    // 파라미터 한개 괄호 생략 가능
+    const dinnerMenu = food => `I'm going to eat a ${food} for dinner.`;
+
+    // 파라미터 두개 이상은 괄호 생략 불가능
+    const dinnerMenu2 = (food, drink) 
+    => `I'm going to eat a ${food} and ${drink} for dinner.`;
+
+
+</script>

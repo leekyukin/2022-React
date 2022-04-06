@@ -1,0 +1,14 @@
+<script>
+
+    fetch('https://jsonplaceholder.typicode.com/comments/1', {
+        method: 'GET'
+    })
+    .then(response => response.json())
+    .then(json => console.log(json));
+
+    fetch('https://api.chucknorris.io/jokes/random', {
+        method: 'POST'
+    })
+    .then(response => response.json())
+    .then(json => console.log(json));
+</script>
