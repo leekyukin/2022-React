@@ -1,0 +1,27 @@
+.container {
+    border: 5px solid #ffcc5c;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container > div {
+    width: 300px;
+}
+
+/* .item1 {
+    flex:1 1 200px;
+    
+    위 코드는 아래와 같음
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basic: 200px;
+    
+} */
+
+.item2 {
+    flex: 1 2 200px;
+}
+
+.item3 {
+    order: 1
+}

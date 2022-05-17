@@ -1,0 +1,34 @@
+.container {
+    border: 5px solid #ffcc5c;
+    display: flex;
+    flex-direction: row;
+    /*  row가 기본 
+        row-recerse : 내부요소 반대로, 열로 
+        column : 행으로
+        column : 내부 요소 반대로, 행으로
+    */
+    justify-content: flex-start;
+    /* 
+       flex-start,
+       flex-end,
+       space-around,
+       space-between 
+    */
+}
+
+/* .home {
+    margin-right: auto;
+} */
+
+/* .logout {
+    margin-left: auto;
+} */
+
+/* 자리 차지 비율 */
+.container > div {
+    flex: 1;
+}
+
+.container > .logout {
+    flex: 2;
+}
